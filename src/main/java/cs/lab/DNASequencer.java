@@ -22,7 +22,7 @@ public class  DNASequencer {
                 for(int IteratorString = 0; IteratorString < word.length(); IteratorString++){
                     String finder = answer.substring(IteratorString);
                     //Si hay coincidencia lo divide
-                    String split[] = word.split(finder);
+                    String [] split= word.split(finder);
                     if (split.length == 2){
                             answer.append(split[1]);
                             break;
