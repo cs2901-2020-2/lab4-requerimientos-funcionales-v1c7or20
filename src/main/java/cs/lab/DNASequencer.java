@@ -10,15 +10,19 @@ public class  DNASequencer {
         logger.info("Starting sequencer...");
     }
 
+
+
     public String calculate(List<String> part){
         String Answer = "";
-        for (String item : part){
+        for (String word : part){
             if (Answer.length() == 0){
-                Answer += item;
+                Answer += word;
             }else {
-                for(int IteradorString = 0; IteradorString < item.length(); IteradorString++){
-                    String Buscador = Answer.substring(IteradorString);
-                    String split[] = item.split(Buscador);
+                //Recorre las palabras y las divide para buscar coincidencias
+                for(int IteratorString = 0; IteratorString < word.length(); IteratorString++){
+                    String Finder = Answer.substring(IteratorString);
+                    //Si hay coincidencia lo divide
+                    String split[] = word.split(Finder);
                     if (split.length == 2){
                             Answer += split[1];
                             break;
