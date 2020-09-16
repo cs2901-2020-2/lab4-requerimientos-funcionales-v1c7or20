@@ -13,23 +13,23 @@ public class  DNASequencer {
 
 
     public String calculate(List<String> part){
-        String Answer = "";
+        StringBuilder answer = new StringBuilder();
         for (String word : part){
-            if (Answer.length() == 0){
-                Answer += word;
+            if (answer.length() == 0){
+                answer.append(word);
             }else {
                 //Recorre las palabras y las divide para buscar coincidencias
                 for(int IteratorString = 0; IteratorString < word.length(); IteratorString++){
-                    String Finder = Answer.substring(IteratorString);
+                    String finder = answer.substring(IteratorString);
                     //Si hay coincidencia lo divide
-                    String split[] = word.split(Finder);
+                    String split[] = word.split(finder);
                     if (split.length == 2){
-                            Answer += split[1];
+                            answer.append(split[1]);
                             break;
                     }
                 }
             }
         }
-        return Answer;
+        return answer.toString();
     }
 }

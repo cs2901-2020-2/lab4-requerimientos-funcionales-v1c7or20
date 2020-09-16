@@ -10,9 +10,10 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.projectKey>cs2901-2020-2_lab4</sonar.projectKey>
+        <sonar.projectKey>cs2901-2020-2_lab4-requerimientos-funcionales-v1c7or20</sonar.projectKey>
         <sonar.organization>cs2901-2020-2</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>66c77699240d2514a35b606b08d75c74d61cfa66</sonar.login>
     </properties>
 
     <dependencies>
@@ -31,6 +32,7 @@
             <artifactId>log4j-core</artifactId>
             <version>2.13.3</version>
         </dependency>
+
     </dependencies>
 
     <build>
