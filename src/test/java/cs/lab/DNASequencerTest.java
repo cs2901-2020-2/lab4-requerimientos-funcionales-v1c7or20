@@ -104,7 +104,7 @@ public class DNASequencerTest {
     private static final String CHAR_UPPER = "ACTG";
 
     private static final String DATA_FOR_RANDOM_STRING =  CHAR_UPPER;
-    private static SecureRandom random = new SecureRandom();
+    private static final SecureRandom random = new SecureRandom();
 
     public static String generateRandomString(int length) {
         if (length < 1) throw new IllegalArgumentException();
